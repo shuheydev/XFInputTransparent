@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XFInputTransparent.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <StackLayout>
+            <!--  Place new controls here  -->
+            <Label
+                HorizontalOptions="Center"
+                Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" />
+            <Entry Placeholder="入力できる" VerticalOptions="CenterAndExpand" />
+            <Button Text="押せる" VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+        <Grid
+            BackgroundColor="Pink"
+            InputTransparent="True"
+            Opacity="0.5">
+            <Label Text="これはオーバーレイしたGridに表示させているメッセージです" />
+        </Grid>
+    </Grid>
+
+</ContentPage>
